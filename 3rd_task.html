@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Assignment Output</title>
+  <style>
+    /* Outer container with border and coral/salmon background */
+    .container {
+      background-color: #ff7f50; /* coral background */
+      border: 3px solid black;
+      padding: 16px 20px;
+      width: 80%;
+      margin: 20px auto;
+      font-family: serif;
+    }
+
+    /* Head class styling */
+    .head {
+      color: blue;
+      margin: 10px 0;
+    }
+
+    /* ID bg_lime: adds lime background and centers/styles the h2 */
+    #bglime {
+      background-color: #00ff66; /* lime/spring green */
+      color: blue;
+      padding: 4px 10px;
+      margin: 15px 0;
+    }
+
+    /* In the h2 heading, the word "head" is red */
+    #bglime .red-text {
+      color: red;
+    }
+
+    /* h4 styling */
+    h4.head {
+      font-size: 11px;
+      font-weight: bold;
+    }
+
+    /* General p tag styling (without class or id) */
+    p {
+      color: white;
+      margin: 12px 0;
+      font-size: 15px;
+    }
+
+    /* p tag with id="para" */
+    #para {
+      color: #7cfc00; /* light green / lawn green */
+      font-size: 12px;
+      margin: 10px 0;
+    }
+
+    /* Larger paragraph with bold text */
+    p.large-p {
+      font-size: 17px;
+    }
+
+    /* Instructions label */
+    .subhead {
+      color: black;
+      font-weight: bold;
+      font-size: 14px;
+      margin: 15px 0 8px 0;
+    }
+
+    /* Unordered list */
+    ul {
+      color: white;
+      font-size: 12px;
+      margin: 6px 0 16px 20px;
+      padding-left: 5px;
+    }
+
+    ul li {
+      margin-bottom: 4px;
+    }
+
+    /* Styling anchor tags WITHOUT inline CSS and WITHOUT class/id on <a> */
+    /* Target first <a> using attribute selector [href*="upskillmafia"] or :first-of-type */
+    a[href*="upskillmafia"] {
+      background-color: yellow;
+      color: green;
+      text-decoration: none;
+      padding: 0 2px;
+      font-size: 11px;
+    }
+
+    /* Target second <a> */
+    a[href*="google"] {
+      background-color: blue;
+      color: blue; /* Looks like a solid blue box */
+      text-decoration: none;
+      padding: 0 10px;
+      display: inline-block;
+      font-size: 11px;
+    }
+
+    /* Ordered list */
+    ol {
+      margin: 10px 0 10px 20px;
+      padding-left: 5px;
+      font-size: 12px;
+    }
+
+    /* Default ol li color */
+    ol li {
+      color: #fce4dc; /* faint light peach/white */
+      margin-bottom: 2px;
+    }
+
+    /* 2nd li without any id or class */
+    ol li:nth-child(2) {
+      color: blue;
+    }
+
+    /* 3rd li without any id or class */
+    ol li:nth-child(3) {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- h1 heading with head as a class -->
+    <h1 class="head">This is a h1 heading with head as a class.</h1>
+
+    <!-- h2 heading with head as a class and bglime as an id -->
+    <h2 class="head" id="bglime">This is a h2 heading with "<span class="red-text">head</span>" as a class and "bglime" as an id.</h2>
+
+    <!-- h4 heading with head as a class -->
+    <h4 class="head">This is a h4 heading with head as a class.</h4>
+
+    <!-- p paragraph tag without any id or class -->
+    <p>This is a p paragraph tag without any id or class styled using "p" element selector</p>
+
+    <!-- p paragraph tag with para as an id -->
+    <p id="para">This is a p paragraph tag with para as an id</p>
+
+    <!-- p paragraph with bold element -->
+    <p class="large-p">This is a p <b>paragraph</b> tag without any id or class styled using "p" element selector</p>
+
+    <!-- Label text -->
+    <div class="subhead">Show this output without inline CSS nor using class or id for "a" tag.</div>
+
+    <!-- Unordered list with links -->
+    <ul>
+      <li>Click <a href="https://upskillmafia.com">here</a> to go to UpskillMafia</li>
+      <li>Click <a href="https://google.com">here</a> to go to Google</li>
+    </ul>
+
+    <!-- Ordered list -->
+    <ol>
+      <li>This is li tag without any id or class</li>
+      <li>This is li tag without any id or class and is in blue colour</li>
+      <li>This is li tag without any id or class and is in red colour</li>
+      <li>This is li tag without any id or class</li>
+      <li>This is li tag without any id or class</li>
+    </ol>
+  </div>
+
+</body>
+</html>
