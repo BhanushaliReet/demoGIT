@@ -1,1 +1,141 @@
->> Starting git on 3rd AUG
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment</title>
+</head>
+
+
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>A demonstration of <strong>nearly all basic HTML tags</strong>.</p>
+
+        <nav>
+            <ul>
+                <li><a href="#text-section">Text</a></li>
+                <li><a href="#list-section">Lists</a></li>
+                <li><a href="#table-section">Tables</a></li>
+                <li><a href="#form-section">Forms</a></li>
+                <li><a href="#media-section">Media</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- Main Content Container (Replaced main with a div) -->
+    <div id="main-content">
+
+        <!-- Text Formatting Container -->
+        <div id="text-section">
+            <h2>Text Formatting & Container Tags</h2>
+            
+            <div class="content-box">
+                <h3>Heading Level 3</h3>
+                <p>
+                    This is a standard paragraph with <b>bold text</b>, <i>italic text</i>, 
+                    <u>underlined text</u>, <mark>highlighted text</mark>, and <del>strikethrough text</del>.
+                </p>
+                <p>
+                    You can also show <code>inline code</code>, <sub>subscript (H<sub>2</sub>O)</sub>, 
+                    and <sup>superscript (E = mc<sup>2</sup>)</sup>.
+                </p>
+                <blockquote>
+                    "This is a blockquote for showcasing larger citations or quotes."
+                </blockquote>
+            </div>
+        </div>
+
+        <div id="list-section">
+            <h2>Lists Overview</h2>
+            
+            <div class="list-container">
+                <h3>Unordered List</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+
+                <h3>Ordered List</h3>
+                <ol type="1">
+                    <li>First Step</li>
+                    <li>Second Step</li>
+                    <li>Third Step</li>
+                </ol>
+            </div>
+        </div>
+
+        <div id="table-section">
+            <h2>Data Table</h2>
+            
+            <table border="1">
+                <caption>User Directory</caption>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Role</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Alice</td>
+                        <td>Developer</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Bob</td>
+                        <td>Designer</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="form-section">
+            <h2>Input Form</h2>
+            
+            <form action="#" method="POST">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username" placeholder="Enter username"><br><br>
+
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password"><br><br>
+
+                <label for="bio">Bio:</label><br>
+                <textarea id="bio" name="bio" rows="3" cols="30"></textarea><br><br>
+
+                <label for="role">Select Role:</label>
+                <select id="role" name="role">
+                    <option value="admin">Admin</option>
+                    <option value="user">User</option>
+                </select><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- Media Container -->
+        <div id="media-section">
+            <h2>Media Elements</h2>
+            <div class="media-container">
+                <img src="https://via.placeholder.com/150" alt="Placeholder Example Image">
+                
+                <p>External</p>
+                <a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer">MDN Web Docs</a>
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+    <!-- Footer Container (Replaced footer with a div) -->
+    <div id="footer">
+        <p>&copy; 2026 Basic HTML Guide. All rights reserved.</p>
+    </div>
+
+</body>
+
+</html>
