@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laundry Services - Hamburger Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-logo">
+      <h2>Logo</h2>
+    </div>
+
+    <!-- Desktop / Tablet Navigation Links -->
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+
+    <!-- User & Mobile Hamburger Action Area -->
+    <div class="nav-right">
+      <button class="user-btn" type="button">Username</button>
+
+      <!-- Hamburger button wrapper using tabindex so :focus / :focus-within works -->
+      <div class="menu-container" tabindex="0">
+        <button class="hamburger-btn" aria-label="Open menu" type="button">
+          &#9776;
+        </button>
+
+        <!-- Slide-out Menu List (Sibling/Child for CSS selector targeting) -->
+        <aside class="mobile-menu-drawer">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#about">About Us</a>
+          <a href="#contact">Contact Us</a>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="hero">
+    <div class="hero-left">
+      <div class="content-wrapper">
+        <h1 class="hero-heading">
+          Revitalize Your Clothes with Expert <span class="highlight">Laundry Services!</span>
+        </h1>
+        <p class="hero-description">
+          From premium dry cleaning to swift wash and fold, we deliver care and convenience. Schedule a pickup and rediscover the freshness of your clothes today!
+        </p>
+        <button class="cta-btn" type="button">Book a service today!</button>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <img 
+        src="https://illustrations.popsy.co/amber/shampoo-and-washing.svg" 
+        alt="Laundry Machine Illustration" 
+        class="hero-img"
+      >
+    </div>
+  </main>
+
+</body>
+</html>
