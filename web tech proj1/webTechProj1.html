@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thala 7 Sneaker Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= COMMON NAVBAR ================= -->
+  <header class="navbar">
+    <div class="nav-left">
+      <span class="logo">Thala 7.</span>
+    </div>
+    <nav class="nav-center">
+      <a href="#landing" class="nav-link active">Home</a>
+      <a href="#product" class="nav-link">Product</a>
+      <a href="#cart" class="nav-link">Cart</a>
+      <a href="#checkout" class="nav-link">Checkout</a>
+    </nav>
+    <div class="nav-right">
+      <span class="icon" title="Search">&#128269;</span>
+      <a href="#cart" class="icon" title="Cart">&#128722;</a>
+      <div class="profile-pic" title="Profile">
+        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&q=80" alt="User">
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= 1. LANDING PAGE ================= -->
+  <section id="landing" class="page-section">
+    <div class="hero-container">
+      <div class="hero-left">
+        <span class="brand-tag">seven</span>
+        <h1 class="hero-title">7!! Thala For<br><span class="highlight">a Reason!</span></h1>
+        <p class="hero-desc">
+          Experience unmatched performance and all-day comfort. Engineered for speed, designed for greatness.
+        </p>
+        <a href="#product" class="btn btn-dark">Shop Now</a>
+      </div>
+      <div class="hero-right">
+        <img 
+          src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80" 
+          alt="Main Sneaker" 
+          class="hero-shoe-img"
+        >
+      </div>
+    </div>
+
+    <!-- Service Overview Section -->
+    <div class="stats-bar">
+      <div class="stat-card">
+        <span class="stat-icon">&#10084;</span>
+        <div class="stat-info">
+          <h4>2k+</h4>
+          <p>Reviews</p>
+        </div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">&#128101;</span>
+        <div class="stat-info">
+          <h4>30k+</h4>
+          <p>Customers</p>
+        </div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">&#10004;</span>
+        <div class="stat-info">
+          <h4>High</h4>
+          <p>Quality</p>
+        </div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">&#9733;</span>
+        <div class="stat-info">
+          <h4>4.5/5</h4>
+          <p>Rating</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 2. PRODUCT DISPLAY SECTION ================= -->
+  <section id="product" class="page-section bg-light">
+    <div class="breadcrumbs">
+      Home &gt; THALA FOR A REASON &gt; Seven By M.S.Dhoni Women's Hogun Multi-Color Running Shoes
+    </div>
+
+    <div class="product-main">
+      <div class="product-img-box">
+        <img 
+          src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80" 
+          alt="Hogun Running Shoe"
+        >
+      </div>
+
+      <div class="product-details">
+        <h2 class="product-title">Seven By M.S.Dhoni<br>Women's Hogun Multi-Color Running Shoes</h2>
+        <p class="product-desc">
+          For exceptional fit, feel, and smooth transitions get going with these dual mid-sole technology shoes constructed with molded EVA sockliner, gel at heel area, rubber outsole, fused upper and breathable mesh.
+        </p>
+
+        <div class="price-row">
+          <span class="price">&#8377;1,334</span>
+          <div class="discount-tag">
+            <span class="badge">Save 12%</span>
+            <small>Inclusive of all Taxes</small>
+          </div>
+        </div>
+
+        <div class="action-row">
+          <div class="quantity-selector">
+            <span>Qty:</span>
+            <select>
+              <option>1</option>
+              <option selected>2</option>
+              <option>3</option>
+            </select>
+          </div>
+          <a href="#cart" class="btn btn-orange">&#128722; ADD TO CART</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scrolling Bottom Gallery Section -->
+    <div class="gallery-container">
+      <h3>More Views</h3>
+      <div class="gallery-scroll">
+        <div class="gallery-card"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=300&q=80" alt="view 1"></div>
+        <div class="gallery-card"><img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=300&q=80" alt="view 2"></div>
+        <div class="gallery-card"><img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=300&q=80" alt="view 3"></div>
+        <div class="gallery-card"><img src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=300&q=80" alt="view 4"></div>
+        <div class="gallery-card"><img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=300&q=80" alt="view 5"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 3. SHOPPING CART SECTION ================= -->
+  <section id="cart" class="page-section">
+    <h2 class="section-title">Shopping Cart</h2>
+    
+    <div class="cart-layout">
+      <!-- Left Table -->
+      <div class="cart-table-wrapper">
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="table-product">
+                  <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=80&q=80" alt="item">
+                  <span>Seven By M.S.Dhoni (Hogun)</span>
+                </div>
+              </td>
+              <td>
+                <div class="qty-pill">
+                  <button>-</button>
+                  <span>1</span>
+                  <button>+</button>
+                </div>
+              </td>
+              <td class="bold-price">&#8377;1,999</td>
+              <td><button class="remove-btn">&#10005;</button></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="table-product">
+                  <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=80&q=80" alt="item">
+                  <span>Seven By M.S.Dhoni (Runner Pro)</span>
+                </div>
+              </td>
+              <td>
+                <div class="qty-pill">
+                  <button>-</button>
+                  <span>1</span>
+                  <button>+</button>
+                </div>
+              </td>
+              <td class="bold-price">&#8377;1,500</td>
+              <td><button class="remove-btn">&#10005;</button></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="table-product">
+                  <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=80&q=80" alt="item">
+                  <span>Seven By M.S.Dhoni (Stride Air)</span>
+                </div>
+              </td>
+              <td>
+                <div class="qty-pill">
+                  <button>-</button>
+                  <span>1</span>
+                  <button>+</button>
+                </div>
+              </td>
+              <td class="bold-price">&#8377;1,500</td>
+              <td><button class="remove-btn">&#10005;</button></td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <div class="cart-bottom">
+          <a href="#product" class="continue-link">&lt; Continue Shopping</a>
+        </div>
+      </div>
+
+      <!-- Right Summary Card -->
+      <aside class="summary-card">
+        <div class="coupon-box">
+          <input type="text" placeholder="Enter Coupon Code">
+          <button class="btn btn-blue">Apply Coupon</button>
+        </div>
+
+        <div class="summary-breakdown">
+          <div class="summary-line">
+            <span>Sub Total</span>
+            <span>&#8377;4,700</span>
+          </div>
+          <div class="summary-line">
+            <span>Taxes (if applicable)</span>
+            <span>&#8377;299</span>
+          </div>
+          <div class="summary-line">
+            <span>Discount</span>
+            <span>&#8377;0</span>
+          </div>
+          <hr>
+          <div class="summary-line total-line">
+            <span>Total</span>
+            <span>&#8377;4,999</span>
+          </div>
+        </div>
+
+        <a href="#checkout" class="btn btn-orange full-width">Pay Now &#8377;4,999</a>
+        
+        <div class="trust-badge">
+          <span>Secured by <strong>Razorpay</strong></span>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ================= 4. PAYMENT / CHECKOUT SECTION ================= -->
+  <section id="checkout" class="page-section bg-light">
+    <div class="checkout-layout">
+      
+      <!-- Left Container -->
+      <div class="checkout-form-box">
+        <h3 class="checkout-subheading">Checkout</h3>
+        
+        <div class="form-group">
+          <label>Contact Details</label>
+          <input type="email" placeholder="Email ID" value="customer@thala7.com">
+        </div>
+
+        <div class="payment-tabs-section">
+          <label>Payment</label>
+          <div class="payment-tabs">
+            <button class="tab-btn active" type="button">&#128179; Card</button>
+            <button class="tab-btn" type="button">&#8383; Crypto</button>
+            <button class="tab-btn" type="button">&#127963; Bank</button>
+          </div>
+
+          <form class="card-details-form">
+            <div class="form-group">
+              <label>Card Number</label>
+              <input type="text" placeholder="1234 5678 9101 1121">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group half">
+                <label>Expiry</label>
+                <input type="text" placeholder="MM/YY">
+              </div>
+              <div class="form-group half">
+                <label>CVC</label>
+                <input type="text" placeholder="CVC">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group half">
+                <label>Country</label>
+                <input type="text" placeholder="India">
+              </div>
+              <div class="form-group half">
+                <label>ZIP Code</label>
+                <input type="text" placeholder="302001">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Right Container -->
+      <aside class="summary-card">
+        <h3 class="summary-title">Order Summary</h3>
+        
+        <div class="coupon-box">
+          <input type="text" placeholder="Enter Coupon Code">
+          <button class="btn btn-blue">Apply Coupon</button>
+        </div>
+
+        <div class="summary-breakdown">
+          <div class="summary-line">
+            <span>Sub Total</span>
+            <span>&#8377;4,700</span>
+          </div>
+          <div class="summary-line">
+            <span>Taxes (if applicable)</span>
+            <span>&#8377;299</span>
+          </div>
+          <div class="summary-line">
+            <span>Discount</span>
+            <span>&#8377;0</span>
+          </div>
+          <hr>
+          <div class="summary-line total-line">
+            <span>Total</span>
+            <span>&#8377;4,999</span>
+          </div>
+        </div>
+
+        <button class="btn btn-orange full-width" type="button">Pay Now &#8377;4,999</button>
+        
+        <div class="trust-badge">
+          <span>Secured by <strong>Razorpay</strong></span>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+</body>
+</html> 
