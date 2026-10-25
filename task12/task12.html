@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odd or Even Checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+    <h2>Odd or Even Checker</h2>
+    <p>Open the browser console (Press <strong>F12</strong> &rarr; <strong>Console</strong>) to see the results.</p>
+    <div id="results" class="results-box"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Visual mirror for page preview
+    const resultsDiv = document.getElementById("results");
+    const testNumbers = [num1, num2, num3, num4];
+    testNumbers.forEach(n => {
+      const p = document.createElement("p");
+      p.textContent = `The number ${n} is ${n % 2 === 0 ? "even" : "odd"}.`;
+      resultsDiv.appendChild(p);
+    });
+  </script>
+</body>
+</html>
