@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7faff;
+  color: #333333;
+}
+
+/* 1. Container Setup: 100vh height & Flexbox layout */
+.login-wrapper {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* 2. Left Section: Solid Cyan-Blue Background & Centered Image */
+.left-section {
+  flex: 1;
+  background-color: #0099ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.laundry-img {
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+}
+
+/* 3. Right Section: Form Container using Flexbox for Centering */
+.right-section {
+  flex: 1;
+  background-color: #f7faff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 4. Form Heading and Description */
+.form-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.form-header h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #27303f;
+  margin-bottom: 6px;
+}
+
+.form-header p {
+  font-size: 0.95rem;
+  color: #7d8799;
+}
+
+/* 5. Inputs and Labels */
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  font-size: 0.85rem;
+  color: #6c757d;
+  margin-bottom: 8px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px 18px;
+  font-size: 0.95rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #333333;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-group input::placeholder {
+  color: #c0c7d2;
+}
+
+.input-group input:focus {
+  border-color: #00a2ff;
+  box-shadow: 0 0 0 3px rgba(0, 162, 255, 0.15);
+}
+
+/* Forgot Password Link */
+.forgot-password {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -10px;
+  margin-bottom: 25px;
+}
+
+.forgot-password a {
+  font-size: 0.8rem;
+  color: #718096;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+/* 6. Login Button */
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #00a2ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 162, 255, 0.3);
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.login-btn:hover {
+  background-color: #008ee0;
+}
+
+.login-btn:active {
+  transform: scale(0.99);
+}
+
+/* Footer / Register Link */
+.form-footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.85rem;
+  color: #718096;
+}
+
+.form-footer a {
+  color: #00a2ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.form-footer a:hover {
+  text-decoration: underline;
+}
